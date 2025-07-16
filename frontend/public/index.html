@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<title>310 Frontend</title>
+	<link href="/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="Headers">Insight UBC</div>
+<div class="interactField">
+	[
+	<a href="#" class="hideAdd" onclick="hideAdd(this)" style="text-decoration: none; color: #0074D9"> Add a dataset </a>
+		 ]
+	<form id="addForm" style="background-color: #cccccc">
+
+	<label for="idInput">Dataset id:</label>
+	<input type="text" id="idInput" /><br>
+	<label for="fileInput">File:</label>
+	<input type="file" id="fileInput" /><br>
+	<button id="addDatasetButton" class="button">Add dataset</button>
+	</form>
+</div>
+<p class="subHeaders">Datasets</p>
+<div id="datasetsDiv" class="datasetsDivs"></div>
+
+
+<script type="text/javascript" src="/frontend.js"></script>
+</body>
+</html>

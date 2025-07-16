@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+
+	<title>310 Frontend</title>
+	<link href="/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="Headers"><a href="http://localhost:4321/">Insight UBC</a></div>
+
+<!--	<a href="../index.html" class="homeButton">Home</a><br>-->
+<form>
+	<h4> Enter a Course to Find the Number of Students that Passed and Failed:</h4>
+	<label for="dept">Department: </label>
+	<input type="text" id="dept"> <br>
+	<label for="classId">Course Number:  </label>
+	<input type="text" id="classId"> <br>
+	<button id="queryButton" type="button" class="button">Get Grade Insights</button>
+</form>
+<form style="background-color: #bbbbbb">
+	<h4> Enter a Grade to See How Many Courses Have a Higher Average Grouped By Department:</h4>
+	<label for="gradeThreshold">Grade Threshold: </label>
+	<input type="number" id="gradeThreshold" min="0" max="100"> <br>
+	<button id="gradeThresholdButton" type="button" class="button">Get Courses Above Threshold</button>
+</form>
+
+<div id="chartThreshold"></div>
+
+<!--<p class="subHeaders">Grade Distribution Insights</p>-->
+<!--<h1>Grade Distribution Over Years</h1>-->
+<div id="chart"></div>
+
+<!-- Sorting Interface -->
+<div class="sortField">
+	<p class="subHeaders">Sort Sections</p>
+	<form id="sortForm" style="background-color: #cccccc; padding: 10px;">
+		<label for="sortMetric">Sort by:</label>
+		<select id="sortMetric">
+			<option value="sections_avg">Average Grade</option>
+			<option value="sections_pass">Pass Rate</option>
+			<option value="sections_fail">Fail Rate</option>
+		</select><br>
+		<label for="sortOrder">Order:</label>
+		<select id="sortOrder">
+			<option value="UP">Ascending</option>
+			<option value="DOWN">Descending</option>
+		</select><br>
+		<button id="applySortButton" class="button">Apply Sort</button>
+	</form>
+</div>
+
+<p class="subHeaders">Sorted Results</p>
+<div id="sortedResultsDiv" class="resultsDivs"></div>
+
+<!-- Filtering by Instructor -->
+<div class="filterField">
+	<p class="subHeaders">Filter by Instructor</p>
+	<form id="instructorFilterForm" style="background-color: #cccccc; padding: 10px;">
+		<label for="instructorName">Instructor Name:</label>
+		<input type="text" id="instructorName" placeholder="Enter instructor name"><br>
+		<button id="applyInstructorFilterButton" class="button" type="button">Apply Filter</button>
+	</form>
+</div>
+<!-- Reset Filters Button -->
+<button id="resetFiltersButton" class="button" style="margin-top: 10px;">Reset Filters</button>
+
+<script type="text/javascript" src="/insightsJS.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+.button {
+	background-color: #4a9c5b;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 8px;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.Headers {
+	border: none;
+	color: #efe9e9;
+	padding: 15px 32px;
+	text-align: left;
+	text-decoration: none;
+	display: block;
+	font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
+	font-size: 60px;
+	background-color: #8282d1;
+}
+.subHeaders {
+
+	border: none;
+	color: #efe9e9;
+	padding: 10px 32px;
+	text-align: left;
+	text-decoration: none;
+	display: block;
+	font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	background-color: #8282d1;
+	margin: unset;
+}
+.interactField {
+	padding: 25px 2px;
+	margin-left:50px;
+	margin-right:50px;
+}
+.datasetsDivs {
+	background-color: #8282d1;
+	padding-bottom: 20px;
+}
+label {
+	padding: 10px 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+input {
+	padding: 5px 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*.bar {*/
+/*	fill: steelblue;*/
+/*}*/
+.bar:hover {
+	fill: orange;
+}
+.axis-label {
+	font-size: 12px;
+}
+
+#queryButton {
+	margin-bottom: 10px;
+}
+
+#gradeThresholdButton {
+	margin-bottom: 10px;
+}
+a {
+	text-decoration: none;
+}
+
+#resetFiltersButton {
+	background-color: #ff4d4d;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+#resetFiltersButton:hover {
+	background-color: #ff3333;
+}
+
+#sortForm {
+	margin-bottom: 10px;
+}
+
+#sortMetric {
+	margin-bottom: 5px;
+}
+
+#sortOrder {
+	margin-bottom: 5px;
+}
