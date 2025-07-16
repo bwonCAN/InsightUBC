@@ -1,0 +1,30 @@
+{
+	"title": "Invalid apply key value",
+	"input": {
+		"WHERE": {
+		  "GT": {
+			"sections_fail": 40
+		  }
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_title",
+			"AverageFail"
+		  ]
+		},
+		"TRANSFORMATIONS": {
+		  "GROUP": [
+			"sections_title"
+		  ],
+		  "APPLY": [
+			{
+			  "AverageFail": {
+				"AVG": ""
+			  }
+			}
+		  ]
+		}
+	  },
+	"errorExpected": true,
+	"expected": "InsightError"
+}

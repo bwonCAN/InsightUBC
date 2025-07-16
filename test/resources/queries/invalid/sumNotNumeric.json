@@ -1,0 +1,30 @@
+{
+	"title": "sum not numeric",
+	"input": {
+		"WHERE": {
+		  "GT": {
+			"sections_avg": 97
+		  }
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_title",
+			"sumAVG"
+		  ]
+		},
+		"TRANSFORMATIONS": {
+		  "GROUP": [
+			"sections_title"
+		  ],
+		  "APPLY": [
+			{
+			  "sumAVG": {
+				"SUM": "sections_dept"
+			  }
+			}
+		  ]
+		}
+	  },
+	"errorExpected": true,
+	"expected": "InsightError"
+}

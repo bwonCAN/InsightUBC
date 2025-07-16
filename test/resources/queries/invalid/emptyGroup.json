@@ -1,0 +1,36 @@
+{
+	"title": "emptyGroup",
+	"input": {
+		"WHERE": {
+		   "IS": {
+			  "rooms_furniture": "*Class*"
+		   }
+		},
+		"OPTIONS": {
+		   "COLUMNS": [
+			  "rooms_shortname",
+			  "totalSeats"
+		   ],
+		   "ORDER": {
+			  "dir": "UP",
+			  "keys": [
+				 "totalSeats"
+			  ]
+		   }
+		},
+		"TRANSFORMATIONS": {
+		   "GROUP": [
+			  
+		   ],
+		   "APPLY": [
+			  {
+				 "minSeats": {
+					"MIN": "rooms_seats"
+				 }
+			  }
+		   ]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

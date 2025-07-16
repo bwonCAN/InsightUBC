@@ -1,0 +1,6 @@
+{
+	"title": "notObject",
+	"input": 55,
+	"errorExpected": true,
+	"expected": "InsightError"
+}

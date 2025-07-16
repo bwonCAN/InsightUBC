@@ -1,0 +1,19 @@
+{
+	"title": "resultTooBigEdge",
+	"input": {
+		"WHERE": {
+		  "LT": {
+			"sections_avg": 68.571
+		  }
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_dept",
+			"sections_avg"
+		  ],
+		  "ORDER": "sections_avg"
+		}
+	  },
+	"errorExpected": true,
+	"expected": "ResultTooLargeError"
+}

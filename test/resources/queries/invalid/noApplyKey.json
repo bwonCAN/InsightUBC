@@ -1,0 +1,30 @@
+{
+	"title": "no apply key",
+	"input": {
+		"WHERE": {
+		  "GT": {
+			"sections_fail": 40
+		  }
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_title",
+			"AverageFail"
+		  ]
+		},
+		"TRANSFORMATIONS": {
+		  "GROUP": [
+			"sections_title"
+		  ],
+		  "APPLY": [
+			{
+			  "": {
+				"AVG": "sections_fail"
+			  }
+			}
+		  ]
+		}
+	  },
+	"errorExpected": true,
+	"expected": "InsightError"
+}

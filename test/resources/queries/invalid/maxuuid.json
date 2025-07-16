@@ -1,0 +1,62 @@
+{
+	"title": "underscoreError",
+	"input": {
+		"WHERE": {
+		  "AND": [
+			{
+			  "GT": {
+				"sections_fail": 76
+			  }
+			},
+			{
+			  "IS": {
+				"sections_dept": "cpsc"
+			  }
+			}
+		  ]
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_dept",
+			"sections_uuid",
+			"sections_id",
+			"sections_instructor",
+			"sections_avg",
+			"sections_pass",
+			"sections_fail",
+			"sections_audit",
+			"sections_year",
+			"sections_title",
+			"maxId"
+		  ]
+		},
+		"TRANSFORMATIONS": {
+		  "GROUP": [
+			"sections_dept",
+			"sections_uuid",
+			"sections_id",
+			"sections_instructor",
+			"sections_avg",
+			"sections_pass",
+			"sections_fail",
+			"sections_audit",
+			"sections_year",
+			"sections_title"
+		  ],
+		  "APPLY": [
+			{
+			  "maxId": {
+				"MAX": "sections_uuid"
+			  }
+			},
+			{
+			  "minFail": {
+				"MIN": "sections_fail"
+			  }
+			}
+		  ]
+		}
+	  },
+	"errorExpected": true,
+	"expected": "InsightError"
+}

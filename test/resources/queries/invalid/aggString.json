@@ -1,0 +1,31 @@
+{
+	"title": "agg on string",
+	"input": {
+		"WHERE": {
+			 "GT": {
+			"sections_avg": 97
+		  }
+		  
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_title",
+			"overallMAX"
+		  ]
+		},
+		"TRANSFORMATIONS": {
+		  "GROUP": [
+			"sections_title"
+		  ],
+		  "APPLY": [
+			{
+			  "overallMAX": {
+				"MAX": "sections_dept"
+			  }
+			}
+		  ]
+		}
+	  },
+	"errorExpected": true,
+	"expected": "InsightError"
+}

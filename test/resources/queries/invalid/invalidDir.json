@@ -1,0 +1,42 @@
+{
+	"title": "invalidDir",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_title",
+				"countAvg",
+				"sumAvg"
+			],
+			"ORDER": {
+				"dir": "dow",
+				"keys": [
+					"sumAvg"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_title"
+			],
+			"APPLY": [
+				{
+					"countAvg": {
+						"COUNT": "sections_dept"
+					}
+				},
+				{
+					"sumAvg": {
+						"SUM": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

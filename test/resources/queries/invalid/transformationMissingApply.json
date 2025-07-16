@@ -1,0 +1,23 @@
+{
+	"title": "transformationMissingApply",
+	"input": {
+		"WHERE": {
+			 "GT": {
+			"sections_avg": 97
+		  }
+		  
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_title"
+		  ]
+		},
+		"TRANSFORMATIONS": {
+		  "GROUP": [
+			"sections_title"
+		  ]
+		}
+	  },
+	"errorExpected": true,
+	"expected": "InsightError"
+}
