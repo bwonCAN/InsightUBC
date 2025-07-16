@@ -1,0 +1,90 @@
+{
+	"title": "sorting Tie 3",
+	"input": {
+		"WHERE": {
+		  "NOT": {
+			"GT": {
+			  "sections_avg": 40
+			}
+		  }
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_dept",
+			"sections_avg",
+			"sections_fail"
+		  ],
+		  "ORDER": {
+			"dir": "UP",
+			"keys": [
+			  "sections_avg",
+			  "sections_dept",
+			  "sections_fail"
+			]
+		  }
+		}
+	  },
+	"errorExpected": false,
+	"expected": [
+		  {
+			"sections_dept": "frst",
+			"sections_avg": 0,
+			"sections_fail": 1
+		  },
+		  {
+			"sections_dept": "lfs",
+			"sections_avg": 0,
+			"sections_fail": 1
+		  },
+		  {
+			"sections_dept": "lfs",
+			"sections_avg": 0,
+			"sections_fail": 1
+		  },
+		  {
+			"sections_dept": "wood",
+			"sections_avg": 1,
+			"sections_fail": 2
+		  },
+		  {
+			"sections_dept": "busi",
+			"sections_avg": 4,
+			"sections_fail": 1
+		  },
+		  {
+			"sections_dept": "busi",
+			"sections_avg": 4,
+			"sections_fail": 1
+		  },
+		  {
+			"sections_dept": "fopr",
+			"sections_avg": 4.5,
+			"sections_fail": 4
+		  },
+		  {
+			"sections_dept": "civl",
+			"sections_avg": 33,
+			"sections_fail": 3
+		  },
+		  {
+			"sections_dept": "phil",
+			"sections_avg": 33.2,
+			"sections_fail": 5
+		  },
+		  {
+			"sections_dept": "hist",
+			"sections_avg": 34,
+			"sections_fail": 1
+		  },
+		  {
+			"sections_dept": "educ",
+			"sections_avg": 39.03,
+			"sections_fail": 34
+		  },
+		  {
+			"sections_dept": "educ",
+			"sections_avg": 39.03,
+			"sections_fail": 34
+		  }
+		]
+	  }

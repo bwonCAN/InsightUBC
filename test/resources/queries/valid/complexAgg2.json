@@ -1,0 +1,319 @@
+{
+	"title": "aggregationTest2",
+	"input": {
+		"WHERE": {
+		  "GT": {
+			"sections_fail": 75
+		  }
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_title",
+			"AverageFail",
+			"maxFail",
+			"sumFail"
+		  ]
+		},
+		"TRANSFORMATIONS": {
+		  "GROUP": [
+			"sections_title"
+		  ],
+		  "APPLY": [
+			{
+			  "AverageFail": {
+				"AVG": "sections_fail"
+			  }
+			},
+			{
+			  "maxFail": {
+				"MAX": "sections_fail"
+			  }
+			},
+			{
+			  "sumFail": {
+				"SUM": "sections_fail"
+			  }
+			}
+		  ]
+		}
+	  },
+	"errorExpected": false,
+	"expected": [
+		{
+		  "sections_title": "comp eng design",
+		  "AverageFail": 109,
+		  "maxFail": 141,
+		  "sumFail": 872
+		},
+		{
+		  "sections_title": "technical commun",
+		  "AverageFail": 102,
+		  "maxFail": 123,
+		  "sumFail": 204
+		},
+		{
+		  "sections_title": "biol bact cell",
+		  "AverageFail": 162,
+		  "maxFail": 162,
+		  "sumFail": 162
+		},
+		{
+		  "sections_title": "unicellular life",
+		  "AverageFail": 156.25,
+		  "maxFail": 230,
+		  "sumFail": 625
+		},
+		{
+		  "sections_title": "biology of cell",
+		  "AverageFail": 117,
+		  "maxFail": 150,
+		  "sumFail": 234
+		},
+		{
+		  "sections_title": "eco gen evol",
+		  "AverageFail": 147,
+		  "maxFail": 147,
+		  "sumFail": 147
+		},
+		{
+		  "sections_title": "gentcs ecol&evol",
+		  "AverageFail": 123.17,
+		  "maxFail": 162,
+		  "sumFail": 739
+		},
+		{
+		  "sections_title": "cell biology 1",
+		  "AverageFail": 150,
+		  "maxFail": 204,
+		  "sumFail": 900
+		},
+		{
+		  "sections_title": "fund cell bio",
+		  "AverageFail": 102,
+		  "maxFail": 133,
+		  "sumFail": 612
+		},
+		{
+		  "sections_title": "intro biochem",
+		  "AverageFail": 86,
+		  "maxFail": 86,
+		  "sumFail": 86
+		},
+		{
+		  "sections_title": "molecular gen",
+		  "AverageFail": 78,
+		  "maxFail": 78,
+		  "sumFail": 78
+		},
+		{
+		  "sections_title": "found re apprai",
+		  "AverageFail": 83.67,
+		  "maxFail": 88,
+		  "sumFail": 251
+		},
+		{
+		  "sections_title": "structural chem",
+		  "AverageFail": 248.33,
+		  "maxFail": 287,
+		  "sumFail": 1490
+		},
+		{
+		  "sections_title": "strctr bond chem",
+		  "AverageFail": 257.5,
+		  "maxFail": 264,
+		  "sumFail": 515
+		},
+		{
+		  "sections_title": "phys & org chem",
+		  "AverageFail": 138,
+		  "maxFail": 168,
+		  "sumFail": 552
+		},
+		{
+		  "sections_title": "thm kin org chem",
+		  "AverageFail": 109,
+		  "maxFail": 121,
+		  "sumFail": 218
+		},
+		{
+		  "sections_title": "chem for engr",
+		  "AverageFail": 87,
+		  "maxFail": 91,
+		  "sumFail": 174
+		},
+		{
+		  "sections_title": "physical chem",
+		  "AverageFail": 97,
+		  "maxFail": 97,
+		  "sumFail": 97
+		},
+		{
+		  "sections_title": "org chem biol sc",
+		  "AverageFail": 150.45,
+		  "maxFail": 226,
+		  "sumFail": 1655
+		},
+		{
+		  "sections_title": "int quan dec mak",
+		  "AverageFail": 90.5,
+		  "maxFail": 100,
+		  "sumFail": 181
+		},
+		{
+		  "sections_title": "financial acctng",
+		  "AverageFail": 92,
+		  "maxFail": 102,
+		  "sumFail": 184
+		},
+		{
+		  "sections_title": "comptn, progrmng",
+		  "AverageFail": 153.75,
+		  "maxFail": 190,
+		  "sumFail": 615
+		},
+		{
+		  "sections_title": "sftwr constructn",
+		  "AverageFail": 76,
+		  "maxFail": 76,
+		  "sumFail": 76
+		},
+		{
+		  "sections_title": "prncpls micrecon",
+		  "AverageFail": 146,
+		  "maxFail": 221,
+		  "sumFail": 1460
+		},
+		{
+		  "sections_title": "princpl macrecon",
+		  "AverageFail": 150.89,
+		  "maxFail": 187,
+		  "sumFail": 1358
+		},
+		{
+		  "sections_title": "strat univ writ",
+		  "AverageFail": 79,
+		  "maxFail": 79,
+		  "sumFail": 79
+		},
+		{
+		  "sections_title": "catastroph earth",
+		  "AverageFail": 85,
+		  "maxFail": 85,
+		  "sumFail": 85
+		},
+		{
+		  "sections_title": "df calc ap ph sc",
+		  "AverageFail": 101.8,
+		  "maxFail": 120,
+		  "sumFail": 509
+		},
+		{
+		  "sections_title": "int calc ap ph s",
+		  "AverageFail": 190.44,
+		  "maxFail": 222,
+		  "sumFail": 1714
+		},
+		{
+		  "sections_title": "df calc app lf s",
+		  "AverageFail": 78,
+		  "maxFail": 78,
+		  "sumFail": 78
+		},
+		{
+		  "sections_title": "int calc ap lf s",
+		  "AverageFail": 90.5,
+		  "maxFail": 100,
+		  "sumFail": 181
+		},
+		{
+		  "sections_title": "dff calc ap c&ss",
+		  "AverageFail": 94.63,
+		  "maxFail": 122,
+		  "sumFail": 757
+		},
+		{
+		  "sections_title": "int calc ap c&ss",
+		  "AverageFail": 136.8,
+		  "maxFail": 170,
+		  "sumFail": 684
+		},
+		{
+		  "sections_title": "linear systems",
+		  "AverageFail": 98.56,
+		  "maxFail": 112,
+		  "sumFail": 887
+		},
+		{
+		  "sections_title": "dif calc phys ap",
+		  "AverageFail": 86.6,
+		  "maxFail": 97,
+		  "sumFail": 433
+		},
+		{
+		  "sections_title": "calc socsci comm",
+		  "AverageFail": 98.67,
+		  "maxFail": 114,
+		  "sumFail": 592
+		},
+		{
+		  "sections_title": "calculus 3",
+		  "AverageFail": 104.7,
+		  "maxFail": 115,
+		  "sumFail": 1047
+		},
+		{
+		  "sections_title": "matrix algebra",
+		  "AverageFail": 83.25,
+		  "maxFail": 87,
+		  "sumFail": 333
+		},
+		{
+		  "sections_title": "log & crit think",
+		  "AverageFail": 85.5,
+		  "maxFail": 87,
+		  "sumFail": 171
+		},
+		{
+		  "sections_title": "intro physics",
+		  "AverageFail": 85,
+		  "maxFail": 85,
+		  "sumFail": 85
+		},
+		{
+		  "sections_title": "energy & waves",
+		  "AverageFail": 145.38,
+		  "maxFail": 184,
+		  "sumFail": 1163
+		},
+		{
+		  "sections_title": "intr phys eng ii",
+		  "AverageFail": 87,
+		  "maxFail": 93,
+		  "sumFail": 174
+		},
+		{
+		  "sections_title": "mechanics i",
+		  "AverageFail": 102,
+		  "maxFail": 111,
+		  "sumFail": 408
+		},
+		{
+		  "sections_title": "bio cog psych",
+		  "AverageFail": 137.29,
+		  "maxFail": 175,
+		  "sumFail": 961
+		},
+		{
+		  "sections_title": "dev soc cli psy",
+		  "AverageFail": 120.17,
+		  "maxFail": 146,
+		  "sumFail": 721
+		},
+		{
+		  "sections_title": "rsrch&writ human",
+		  "AverageFail": 87,
+		  "maxFail": 87,
+		  "sumFail": 87
+		}
+	  ]
+	}

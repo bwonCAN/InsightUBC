@@ -1,0 +1,17 @@
+{
+	"title": "sectionOverall",
+	"input": {
+		"WHERE": {
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"validSection2_dept",
+				"validSection2_avg",
+				"validSection2_year"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [{"Subject":"aanb","Avg":87.83,"Year":"2015"}]
+}

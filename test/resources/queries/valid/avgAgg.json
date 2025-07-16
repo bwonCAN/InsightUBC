@@ -1,0 +1,931 @@
+{
+	"title": "avgAgg",
+	"input": {
+		"WHERE": {
+		  "GT": {
+			"sections_avg": 93
+		  }
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_title",
+			"AverageFail"
+		  ]
+		},
+		"TRANSFORMATIONS": {
+		  "GROUP": [
+			"sections_title"
+		  ],
+		  "APPLY": [
+			{
+			  "AverageFail": {
+				"AVG": "sections_fail"
+			  }
+			}
+		  ]
+		}
+	  },
+	"errorExpected": false,
+	"expected": [
+		  {
+			"sections_title": "rsrch methdlgy",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "dev wkshp/sem",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "eng mtls lab",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "info tech&archvs",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "aud&non-txt arch",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "hearing sci ii",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "comm disorders",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "phyl ms aud func",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "pediatric audio",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "audi prctcm iii",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "audi prctcm iv",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "audi adv prc ii",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "as in s&s disord",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "lang dev life",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "prob-bsd lrn bio",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "ecolg plant bioc",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "med tech project",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "master eng proj",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "grad prac",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "project & report",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "tpc int-cel traf",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "fluor microscpy",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "ths prop: biotec",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "thermodynamics",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "math operations",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "dynam struct 2",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "schl counselling",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "counsl adolescnt",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "adlt psychpathlg",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "career planning",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "prgm devl cnsl",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "cross-cltr cnsl",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "stats methlgy i",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "honours thesis",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "thry of automata",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "computl ling 1",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "m.sc major essay",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "prep writ career",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "thesis",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "cr-fc grwth&dev",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "trends & topics",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "kinder curriclm",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "asmnt spec needs",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "spc tpcs macroec",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "problty & stat",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "labour economics",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "soc & econ measu",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "ds tec ii sc c&p",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "ict educ ethics",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "home ec: 2nd ii",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "hmec ii sec c&p",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "rev res curr&ped",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "crit anly sci ed",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "curric iss&thry",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "txt pol& id cdev",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "curr hist contxt",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "rsc trd edu admn",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "fn & educ change",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "org&admin hi edu",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "adu edu pro",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "adlt edu pract",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "sem sociol educ",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "educ theories",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "res mthd in educ",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "nanosc model&sim",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "multimedia sys",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "power syst dynam",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "cad algrthm i cr",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "electronics lab",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "adv geotechnics",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "tch'g hghly able",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "intro excp child",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "lrn'g disablties",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "incl bl vis-imp",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "tchg st visl imp",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "ed st dvl ds inc",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "typ atyp inf/ch",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "ed prg hghly abl",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "augmt&alt comm",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "tech for vis imp",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "assess lrn diffi",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "prg child sp lrn",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "classroom mgmt",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "surv bhvr dis ch",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "intrv ch&ad bh d",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "educ stds autism",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "intr stat rs edu",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "hn dev, lrn, cul",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "hn dev: inf-adlt",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "crit spec ed",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "able&creatv lrnr",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "dev el sk df&hrd",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "cur dev e df&hrd",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "std in sign lang",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "specific lrn dis",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "basic princ meas",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "dev scale&measur",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "curric as&interv",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "acad assess schl",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "socl&emtl assess",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "ind skl vis imp",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "sem in autism",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "prof,eth&lgl iss",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "thy cognt assess",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "dev neuropsych",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "prin behav anlys",
+			"AverageFail": 0.4
+		  },
+		  {
+			"sections_title": "exp des anl ed",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "dsgn&anl smp&sub",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "mt-anl qnt rs sy",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "cor des ed res",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "coll&uni teachng",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "mult des anal rs",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "hier lin modelng",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "item respns thry",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "res meth educ",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "des tech",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "found ed tech",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "indig, tech&ed",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "constr strat",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "curric issu",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "tech arts hum",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "tech math sci",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "mo pict prod i",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "fisheries mngmt",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "food theor app",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "tech comm skills",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "ds intl forstry",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "tops public plcy",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "frst ntns rsorcs",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "islnd wild mgmt",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "eco-based mgmt",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "intr hindi-urdu",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "pln pe,sp&ex prg",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "prev spts inj i",
+			"AverageFail": 0.5
+		  },
+		  {
+			"sections_title": "kin project",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "spec tpcs kin",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "phyl asp phy act",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "coaching effctv",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "acad libraries",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "thr lng&lit rsrc",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "algebra i",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "algebra ii",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "complex analy",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "functional analy",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "prt diff equa i",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "combinatorial op",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "diff geometry i",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "algb topology i",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "algb geometry i",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "lie theory i",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "harmonic anal i",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "probability i",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "probability ii",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "intr dyn systems",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "msc major essay",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "linear vibrtns",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "genome analysis",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "adv human gene",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "exptl med method",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "m.sc. thesis",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "pulmonry pthphyl",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "research problem",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "adv immunogeneti",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "cnsl mat cr prov",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "appl hlth serv",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "crit apprais lit",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "seminar",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "mgmt sc meth",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "hydrmtllgcl rctr",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "masters thesis",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "intro musc thry",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "contem players",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "hist poplr music",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "orch repertoire",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "ubc singers",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "ubc chamb string",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "contemp players",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "ldrshp, ethics",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "ldrshp ethcs pol",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "chldren&families",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "mntl hlth concrn",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "cl pro prim care",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "adv hlth assess",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "primary care iii",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "fam nrs pract",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "eth&profl issues",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "msn major essay",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "msc thesis",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "concepts in onco",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "ms thesis",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "admn of injectns",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "log & crit think",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "phrm in practc 1",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "clin make iv",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "quantum mech ii",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "quant fld theory",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "adv rad biophys",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "sem r prpty dv&p",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "nat resrce mngmt",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "health psych",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "eth & prof clin",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "intro psychthrpy",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "eval src evidenc",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "rehab learning",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "social analysis",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "fst ntns soc iss",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "pr mental health",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "hlth & soc care",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "adv int seminar",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "directed study",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "advancd span iii",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "sociocult determ",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "work int health",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "an meth epid res",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "meas health care",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "survlnc&monitrng",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "syst rev hlth rs",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "math mdl com dis",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "hlth tech asmnt",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "com hlth prom",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "sbst use addictn",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "surgical rsrch",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "sound design",
+			"AverageFail": 0
+		  },
+		  {
+			"sections_title": "scenery prod i",
+			"AverageFail": 0
+		  }
+		]
+	  }

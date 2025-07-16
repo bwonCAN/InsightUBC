@@ -1,0 +1,407 @@
+{
+	"title": "avgAgg2",
+	"input": {
+		"WHERE": {
+		  "GT": {
+			"sections_fail": 40
+		  }
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_title",
+			"AverageFail"
+		  ]
+		},
+		"TRANSFORMATIONS": {
+		  "GROUP": [
+			"sections_title"
+		  ],
+		  "APPLY": [
+			{
+			  "AverageFail": {
+				"AVG": "sections_fail"
+			  }
+			}
+		  ]
+		}
+	  },
+	"errorExpected": false,
+	"expected": [
+		{
+		  "sections_title": "comp eng design",
+		  "AverageFail": 93.18
+		},
+		{
+		  "sections_title": "technical commun",
+		  "AverageFail": 83.33
+		},
+		{
+		  "sections_title": "eng materials",
+		  "AverageFail": 42
+		},
+		{
+		  "sections_title": "general biochem",
+		  "AverageFail": 49.67
+		},
+		{
+		  "sections_title": "biol bact cell",
+		  "AverageFail": 105
+		},
+		{
+		  "sections_title": "unicellular life",
+		  "AverageFail": 136.8
+		},
+		{
+		  "sections_title": "biology of cell",
+		  "AverageFail": 89
+		},
+		{
+		  "sections_title": "eco gen evol",
+		  "AverageFail": 147
+		},
+		{
+		  "sections_title": "gentcs ecol&evol",
+		  "AverageFail": 110.63
+		},
+		{
+		  "sections_title": "cell biology 1",
+		  "AverageFail": 150
+		},
+		{
+		  "sections_title": "fund cell bio",
+		  "AverageFail": 85.55
+		},
+		{
+		  "sections_title": "intro biochem",
+		  "AverageFail": 86
+		},
+		{
+		  "sections_title": "cell biology 2",
+		  "AverageFail": 58
+		},
+		{
+		  "sections_title": "fund genetics",
+		  "AverageFail": 52
+		},
+		{
+		  "sections_title": "molecular gen",
+		  "AverageFail": 56
+		},
+		{
+		  "sections_title": "mic fnd rl es ec",
+		  "AverageFail": 48
+		},
+		{
+		  "sections_title": "fndtns rl es mth",
+		  "AverageFail": 49.33
+		},
+		{
+		  "sections_title": "intr fncl acct",
+		  "AverageFail": 48.5
+		},
+		{
+		  "sections_title": "intr mgmt acct",
+		  "AverageFail": 43
+		},
+		{
+		  "sections_title": "urb&rl es econ",
+		  "AverageFail": 43
+		},
+		{
+		  "sections_title": "found re apprai",
+		  "AverageFail": 59.67
+		},
+		{
+		  "sections_title": "real est inv an",
+		  "AverageFail": 42.5
+		},
+		{
+		  "sections_title": "mass&enrgy balnc",
+		  "AverageFail": 41
+		},
+		{
+		  "sections_title": "str bnd equ chem",
+		  "AverageFail": 53.5
+		},
+		{
+		  "sections_title": "structural chem",
+		  "AverageFail": 129.33
+		},
+		{
+		  "sections_title": "strctr bond chem",
+		  "AverageFail": 155.75
+		},
+		{
+		  "sections_title": "phys & org chem",
+		  "AverageFail": 109.83
+		},
+		{
+		  "sections_title": "thm kin org chem",
+		  "AverageFail": 109
+		},
+		{
+		  "sections_title": "chem for engr",
+		  "AverageFail": 57.56
+		},
+		{
+		  "sections_title": "physical chem",
+		  "AverageFail": 65
+		},
+		{
+		  "sections_title": "org chem biol sc",
+		  "AverageFail": 85.88
+		},
+		{
+		  "sections_title": "tech terms medic",
+		  "AverageFail": 46.5
+		},
+		{
+		  "sections_title": "employment relat",
+		  "AverageFail": 42
+		},
+		{
+		  "sections_title": "int quan dec mak",
+		  "AverageFail": 65.33
+		},
+		{
+		  "sections_title": "mngmt&orgnz bhvr",
+		  "AverageFail": 45
+		},
+		{
+		  "sections_title": "financial acctng",
+		  "AverageFail": 71.25
+		},
+		{
+		  "sections_title": "intro to finance",
+		  "AverageFail": 56
+		},
+		{
+		  "sections_title": "comptn, progrmng",
+		  "AverageFail": 98.44
+		},
+		{
+		  "sections_title": "model comptn",
+		  "AverageFail": 47
+		},
+		{
+		  "sections_title": "sftwr constructn",
+		  "AverageFail": 57
+		},
+		{
+		  "sections_title": "basic alg&data",
+		  "AverageFail": 56
+		},
+		{
+		  "sections_title": "prncpls micrecon",
+		  "AverageFail": 120.21
+		},
+		{
+		  "sections_title": "princpl macrecon",
+		  "AverageFail": 108.27
+		},
+		{
+		  "sections_title": "signals & system",
+		  "AverageFail": 54
+		},
+		{
+		  "sections_title": "univrsty writing",
+		  "AverageFail": 55
+		},
+		{
+		  "sections_title": "strat univ writ",
+		  "AverageFail": 63.17
+		},
+		{
+		  "sections_title": "catastroph earth",
+		  "AverageFail": 61.33
+		},
+		{
+		  "sections_title": "gold & gems",
+		  "AverageFail": 57
+		},
+		{
+		  "sections_title": "fmly human dvlpm",
+		  "AverageFail": 44
+		},
+		{
+		  "sections_title": "int phy geog:a&w",
+		  "AverageFail": 42
+		},
+		{
+		  "sections_title": "changing envr",
+		  "AverageFail": 42.5
+		},
+		{
+		  "sections_title": "chng env: wt&lnd",
+		  "AverageFail": 50.5
+		},
+		{
+		  "sections_title": "begin japn i",
+		  "AverageFail": 49.5
+		},
+		{
+		  "sections_title": "intro acad writ",
+		  "AverageFail": 58
+		},
+		{
+		  "sections_title": "df calc ap ph sc",
+		  "AverageFail": 83.3
+		},
+		{
+		  "sections_title": "int calc ap ph s",
+		  "AverageFail": 147.62
+		},
+		{
+		  "sections_title": "df calc app lf s",
+		  "AverageFail": 56.5
+		},
+		{
+		  "sections_title": "int calc ap lf s",
+		  "AverageFail": 64.25
+		},
+		{
+		  "sections_title": "dff calc ap c&ss",
+		  "AverageFail": 87.2
+		},
+		{
+		  "sections_title": "int calc ap c&ss",
+		  "AverageFail": 95.1
+		},
+		{
+		  "sections_title": "diff calculus",
+		  "AverageFail": 56.17
+		},
+		{
+		  "sections_title": "linear systems",
+		  "AverageFail": 98.56
+		},
+		{
+		  "sections_title": "dif calc phys ap",
+		  "AverageFail": 71.17
+		},
+		{
+		  "sections_title": "calc socsci comm",
+		  "AverageFail": 77.17
+		},
+		{
+		  "sections_title": "calculus 3",
+		  "AverageFail": 104.7
+		},
+		{
+		  "sections_title": "elem diff eq i",
+		  "AverageFail": 51.33
+		},
+		{
+		  "sections_title": "math proof",
+		  "AverageFail": 48.33
+		},
+		{
+		  "sections_title": "matrix algebra",
+		  "AverageFail": 71.75
+		},
+		{
+		  "sections_title": "multivrbl calc",
+		  "AverageFail": 48.8
+		},
+		{
+		  "sections_title": "ord diff equtns",
+		  "AverageFail": 59
+		},
+		{
+		  "sections_title": "diff equations",
+		  "AverageFail": 55
+		},
+		{
+		  "sections_title": "partl diff equat",
+		  "AverageFail": 55
+		},
+		{
+		  "sections_title": "med micb & immun",
+		  "AverageFail": 45
+		},
+		{
+		  "sections_title": "log & crit think",
+		  "AverageFail": 66.17
+		},
+		{
+		  "sections_title": "critical thinkng",
+		  "AverageFail": 44.5
+		},
+		{
+		  "sections_title": "intro physics",
+		  "AverageFail": 64.75
+		},
+		{
+		  "sections_title": "energy & waves",
+		  "AverageFail": 107.23
+		},
+		{
+		  "sections_title": "elec light & rad",
+		  "AverageFail": 53.6
+		},
+		{
+		  "sections_title": "dynamics & waves",
+		  "AverageFail": 41
+		},
+		{
+		  "sections_title": "intr phys eng i",
+		  "AverageFail": 64.5
+		},
+		{
+		  "sections_title": "intr phys eng ii",
+		  "AverageFail": 87
+		},
+		{
+		  "sections_title": "mechanics i",
+		  "AverageFail": 77.25
+		},
+		{
+		  "sections_title": "intro to politic",
+		  "AverageFail": 47
+		},
+		{
+		  "sections_title": "government can",
+		  "AverageFail": 44.5
+		},
+		{
+		  "sections_title": "bio cog psych",
+		  "AverageFail": 113.7
+		},
+		{
+		  "sections_title": "dev soc cli psy",
+		  "AverageFail": 99.78
+		},
+		{
+		  "sections_title": "biol & cog psych",
+		  "AverageFail": 49
+		},
+		{
+		  "sections_title": "soc, dev, clin",
+		  "AverageFail": 44
+		},
+		{
+		  "sections_title": "think clr psych",
+		  "AverageFail": 57
+		},
+		{
+		  "sections_title": "analys beh data",
+		  "AverageFail": 57
+		},
+		{
+		  "sections_title": "cultural psych",
+		  "AverageFail": 50
+		},
+		{
+		  "sections_title": "childhood & adol",
+		  "AverageFail": 43
+		},
+		{
+		  "sections_title": "beginner span i",
+		  "AverageFail": 51
+		},
+		{
+		  "sections_title": "rsrch&writ human",
+		  "AverageFail": 79.5
+		}
+	  ]
+	}

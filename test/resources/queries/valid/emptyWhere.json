@@ -1,0 +1,22 @@
+{
+	"title": "empty where",
+	"input": {
+		"WHERE": {
+			
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"twoValidSections_dept"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"twoValidSections_dept": "aanb"
+		},
+		{
+			"twoValidSections_dept": "aanb"
+		}
+	]
+}

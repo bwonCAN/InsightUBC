@@ -1,0 +1,107 @@
+{
+	"title": "countAgg",
+	"input": {
+		"WHERE": {
+		  "GT": {
+			"sections_avg": 97
+		  }
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_title",
+			"countAvg"
+		  ]
+		},
+		"TRANSFORMATIONS": {
+		  "GROUP": [
+			"sections_title"
+		  ],
+		  "APPLY": [
+			{
+			  "countAvg": {
+				"COUNT": "sections_avg"
+			  }
+			}
+		  ]
+		}
+	  },
+	"errorExpected": false,
+	"expected": [
+		  {
+			"sections_title": "career planning",
+			"countAvg": 2
+		  },
+		  {
+			"sections_title": "thesis",
+			"countAvg": 1
+		  },
+		  {
+			"sections_title": "res mthd in educ",
+			"countAvg": 1
+		  },
+		  {
+			"sections_title": "multimedia sys",
+			"countAvg": 1
+		  },
+		  {
+			"sections_title": "assess lrn diffi",
+			"countAvg": 4
+		  },
+		  {
+			"sections_title": "educ stds autism",
+			"countAvg": 4
+		  },
+		  {
+			"sections_title": "dev el sk df&hrd",
+			"countAvg": 1
+		  },
+		  {
+			"sections_title": "acad assess schl",
+			"countAvg": 2
+		  },
+		  {
+			"sections_title": "sem in autism",
+			"countAvg": 1
+		  },
+		  {
+			"sections_title": "cor des ed res",
+			"countAvg": 1
+		  },
+		  {
+			"sections_title": "coll&uni teachng",
+			"countAvg": 1
+		  },
+		  {
+			"sections_title": "diff geometry i",
+			"countAvg": 1
+		  },
+		  {
+			"sections_title": "algb topology i",
+			"countAvg": 1
+		  },
+		  {
+			"sections_title": "algb geometry i",
+			"countAvg": 1
+		  },
+		  {
+			"sections_title": "harmonic anal i",
+			"countAvg": 1
+		  },
+		  {
+			"sections_title": "cl pro prim care",
+			"countAvg": 2
+		  },
+		  {
+			"sections_title": "fam nrs pract",
+			"countAvg": 3
+		  },
+		  {
+			"sections_title": "eth&profl issues",
+			"countAvg": 1
+		  },
+		  {
+			"sections_title": "work int health",
+			"countAvg": 1
+		  }
+		]
+	  }

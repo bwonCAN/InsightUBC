@@ -1,0 +1,66 @@
+{
+	"title": "aggregationTest3",
+	"input": {
+		"WHERE": {
+		  "AND": [
+			{
+			  "GT": {
+				"sections_fail": 76
+			  }
+			},
+			{
+			  "IS": {
+				"sections_dept": "cpsc"
+			  }
+			}
+		  ]
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+	  
+			"maxId"
+		  ]
+		},
+		"TRANSFORMATIONS": {
+		  "GROUP": [
+			"sections_dept",
+			"sections_uuid",
+			"sections_id",
+			"sections_instructor",
+			"sections_avg",
+			"sections_pass",
+			"sections_fail",
+			"sections_audit",
+			"sections_year",
+			"sections_title"
+		  ],
+		  "APPLY": [
+			{
+			  "maxId": {
+				"MAX": "sections_fail"
+			  }
+			},
+			{
+			  "minFail": {
+				"MIN": "sections_fail"
+			  }
+			}
+		  ]
+		}
+	  },
+	"errorExpected": false,
+	"expected": [
+		{
+		  "maxId": 157
+		},
+		{
+		  "maxId": 150
+		},
+		{
+		  "maxId": 190
+		},
+		{
+		  "maxId": 118
+		}
+	  ]
+	}

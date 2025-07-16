@@ -1,0 +1,115 @@
+{
+	"title": "aggregationTest3",
+	"input": {
+		"WHERE": {
+		  "AND": [
+			{
+			  "GT": {
+				"sections_fail": 76
+			  }
+			},
+			{
+			  "IS": {
+				"sections_dept": "cpsc"
+			  }
+			}
+		  ]
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_dept",
+			"sections_uuid",
+			"sections_id",
+			"sections_instructor",
+			"sections_avg",
+			"sections_pass",
+			"sections_fail",
+			"sections_audit",
+			"sections_year",
+			"sections_title",
+			"maxYear"
+		  ]
+		},
+		"TRANSFORMATIONS": {
+		  "GROUP": [
+			"sections_dept",
+			"sections_uuid",
+			"sections_id",
+			"sections_instructor",
+			"sections_avg",
+			"sections_pass",
+			"sections_fail",
+			"sections_audit",
+			"sections_year",
+			"sections_title"
+		  ],
+		  "APPLY": [
+			{
+			  "maxYear": {
+				"MAX": "sections_year"
+			  }
+			},
+			{
+			  "minFail": {
+				"MIN": "sections_fail"
+			  }
+			}
+		  ]
+		}
+	  },
+	"errorExpected": false,
+	"expected": [
+		{
+		  "sections_dept": "cpsc",
+		  "sections_uuid": "1256",
+		  "sections_id": "110",
+		  "sections_instructor": "",
+		  "sections_avg": 72.28,
+		  "sections_pass": 886,
+		  "sections_fail": 157,
+		  "sections_audit": 0,
+		  "sections_year": 1900,
+		  "sections_title": "comptn, progrmng",
+		  "maxYear": 1900
+		},
+		{
+		  "sections_dept": "cpsc",
+		  "sections_uuid": "49856",
+		  "sections_id": "110",
+		  "sections_instructor": "",
+		  "sections_avg": 71.22,
+		  "sections_pass": 819,
+		  "sections_fail": 150,
+		  "sections_audit": 0,
+		  "sections_year": 1900,
+		  "sections_title": "comptn, progrmng",
+		  "maxYear": 1900
+		},
+		{
+		  "sections_dept": "cpsc",
+		  "sections_uuid": "62349",
+		  "sections_id": "110",
+		  "sections_instructor": "",
+		  "sections_avg": 73.25,
+		  "sections_pass": 966,
+		  "sections_fail": 190,
+		  "sections_audit": 0,
+		  "sections_year": 1900,
+		  "sections_title": "comptn, progrmng",
+		  "maxYear": 1900
+		},
+		{
+		  "sections_dept": "cpsc",
+		  "sections_uuid": "83395",
+		  "sections_id": "110",
+		  "sections_instructor": "",
+		  "sections_avg": 72.63,
+		  "sections_pass": 736,
+		  "sections_fail": 118,
+		  "sections_audit": 3,
+		  "sections_year": 1900,
+		  "sections_title": "comptn, progrmng",
+		  "maxYear": 1900
+		}
+	  ]
+	}

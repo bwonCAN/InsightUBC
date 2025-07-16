@@ -1,0 +1,132 @@
+{
+	"title": "twoApply",
+	"input": {
+		"WHERE": {
+		  "GT": {
+			"sections_avg": 97
+		  }
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_title",
+			"countAvg",
+			"sumAvg"
+		  ]
+		},
+		"TRANSFORMATIONS": {
+		  "GROUP": [
+			"sections_title"
+		  ],
+		  "APPLY": [
+			{
+			  "countAvg": {
+				"COUNT": "sections_dept"
+			  }
+			},
+			{
+			  "sumAvg": {
+				"SUM": "sections_avg"
+			  }
+			}
+		  ]
+		}
+	  },
+	"errorExpected": false,
+	"expected": [
+		  {
+			"sections_title": "career planning",
+			"countAvg": 1,
+			"sumAvg": 294.13
+		  },
+		  {
+			"sections_title": "thesis",
+			"countAvg": 1,
+			"sumAvg": 196
+		  },
+		  {
+			"sections_title": "res mthd in educ",
+			"countAvg": 1,
+			"sumAvg": 97.5
+		  },
+		  {
+			"sections_title": "multimedia sys",
+			"countAvg": 1,
+			"sumAvg": 197.5
+		  },
+		  {
+			"sections_title": "assess lrn diffi",
+			"countAvg": 1,
+			"sumAvg": 489.72
+		  },
+		  {
+			"sections_title": "educ stds autism",
+			"countAvg": 1,
+			"sumAvg": 590.89
+		  },
+		  {
+			"sections_title": "dev el sk df&hrd",
+			"countAvg": 1,
+			"sumAvg": 196.9
+		  },
+		  {
+			"sections_title": "acad assess schl",
+			"countAvg": 1,
+			"sumAvg": 195.19
+		  },
+		  {
+			"sections_title": "sem in autism",
+			"countAvg": 1,
+			"sumAvg": 97.69
+		  },
+		  {
+			"sections_title": "cor des ed res",
+			"countAvg": 1,
+			"sumAvg": 194.18
+		  },
+		  {
+			"sections_title": "coll&uni teachng",
+			"countAvg": 1,
+			"sumAvg": 97.67
+		  },
+		  {
+			"sections_title": "diff geometry i",
+			"countAvg": 1,
+			"sumAvg": 194.5
+		  },
+		  {
+			"sections_title": "algb topology i",
+			"countAvg": 1,
+			"sumAvg": 199.56
+		  },
+		  {
+			"sections_title": "algb geometry i",
+			"countAvg": 1,
+			"sumAvg": 194.96
+		  },
+		  {
+			"sections_title": "harmonic anal i",
+			"countAvg": 1,
+			"sumAvg": 194.18
+		  },
+		  {
+			"sections_title": "cl pro prim care",
+			"countAvg": 1,
+			"sumAvg": 393.84
+		  },
+		  {
+			"sections_title": "fam nrs pract",
+			"countAvg": 1,
+			"sumAvg": 589.22
+		  },
+		  {
+			"sections_title": "eth&profl issues",
+			"countAvg": 1,
+			"sumAvg": 194.66
+		  },
+		  {
+			"sections_title": "work int health",
+			"countAvg": 1,
+			"sumAvg": 197.96
+		  }
+		]
+	  }

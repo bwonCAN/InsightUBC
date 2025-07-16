@@ -1,0 +1,64 @@
+{
+	"title": "aggregationTest3",
+	"input": {
+		"WHERE": {
+		  "AND": [
+			{
+			  "GT": {
+				"sections_fail": 70
+			  }
+			},
+			{
+			  "IS": {
+				"sections_dept": "cpsc"
+			  }
+			}
+		  ]
+		},
+		"OPTIONS": {
+		  "COLUMNS": [
+			"sections_title",
+			"AverageFail",
+			"maxFail",
+			"sumFail"
+		  ]
+		},
+		"TRANSFORMATIONS": {
+		  "GROUP": [
+			"sections_title"
+		  ],
+		  "APPLY": [
+			{
+			  "AverageFail": {
+				"AVG": "sections_fail"
+			  }
+			},
+			{
+			  "maxFail": {
+				"MAX": "sections_fail"
+			  }
+			},
+			{
+			  "sumFail": {
+				"SUM": "sections_fail"
+			  }
+			}
+		  ]
+		}
+	  },
+	"errorExpected": false,
+	"expected": [
+		{
+		  "sections_title": "comptn, progrmng",
+		  "AverageFail": 153.75,
+		  "maxFail": 190,
+		  "sumFail": 615
+		},
+		{
+		  "sections_title": "sftwr constructn",
+		  "AverageFail": 76,
+		  "maxFail": 76,
+		  "sumFail": 76
+		}
+	  ]
+	}
